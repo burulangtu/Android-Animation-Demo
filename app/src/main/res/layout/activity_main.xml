@@ -26,4 +26,20 @@
         android:layout_alignStart="@+id/button2"
         android:layout_below="@+id/button2"
         android:text="Propery Animation" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/image_view"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="137dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Drawable Animation"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
