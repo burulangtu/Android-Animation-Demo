@@ -30,23 +30,19 @@ public class PropertyAnimationActivity extends Activity {
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        switch (radioGroup.getCheckedRadioButtonId()) {
-                            case R.id.radioButton1:
-                                valueAnimatorTest();
-                                break;
-                            case R.id.radioButton2:
-                                objectAnimatorTestByXML();
-                                break;
-                            case R.id.radioButton3:
-                                objectAnimatorTest();
-                                break;
+                switch (radioGroup.getCheckedRadioButtonId()) {
+                    case R.id.radioButton1:
+                        valueAnimatorTest();
+                        break;
+                    case R.id.radioButton2:
+                        objectAnimatorTestByXML();
+                        break;
+                    case R.id.radioButton3:
+                        objectAnimatorTest();
+                        break;
 
-                        }
-                    }
-                });
+                }
+                
             }
         });
 
