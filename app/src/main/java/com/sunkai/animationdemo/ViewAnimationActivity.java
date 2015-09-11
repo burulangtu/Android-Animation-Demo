@@ -30,6 +30,7 @@ public class ViewAnimationActivity extends Activity {
                 switch (radioGroup.getCheckedRadioButtonId()) {
                     case R.id.radioButton1:
                         animation = AnimationUtils.loadAnimation(ViewAnimationActivity.this, R.anim.translate_animation);
+                        // animation.setFillAfter(true);
                         break;
                     case R.id.radioButton2:
                         animation = AnimationUtils.loadAnimation(ViewAnimationActivity.this, R.anim.rotate_animation);
@@ -42,6 +43,22 @@ public class ViewAnimationActivity extends Activity {
                         break;
                 }
                 findViewById(R.id.animation_view).startAnimation(animation);
+                animation.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+
+                    }
+                });
             }
         });
     }

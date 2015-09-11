@@ -42,13 +42,13 @@ public class PropertyAnimationActivity extends Activity {
                         break;
 
                 }
-                
+
             }
         });
 
     }
 
-    private void objectAnimatorTestByXML() {
+    private void objectAnimatorTest() {
         ObjectAnimator animation = ObjectAnimator.ofFloat(findViewById(R.id.animation_view), "scaleX", 1.0f, 2.0f);
         animation.setDuration(1000);
         animation.start();
@@ -83,7 +83,7 @@ public class PropertyAnimationActivity extends Activity {
         });
     }
 
-    private void objectAnimatorTest() {
+    private void objectAnimatorTestByXML() {
         Animator animation = AnimatorInflater.loadAnimator(PropertyAnimationActivity.this, R.animator.object_animation);
         animation.setTarget(findViewById(R.id.animation_view));
         animation.start();

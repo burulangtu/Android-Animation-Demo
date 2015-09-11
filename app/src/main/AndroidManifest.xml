@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sunkai.animationdemo"
     android:versionCode="44"
-    android:versionName="2.1.3">
+    android:versionName="2.1.3" >
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -10,20 +10,26 @@
 
     <application>
         <activity
-            android:name="com.sunkai.animationdemo.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.sunkai.animationdemo.PropertyAnimationActivity"
+            android:name=".PropertyAnimationActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.sunkai.animationdemo.ViewAnimationActivity"
+            android:name=".ViewAnimationActivity"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LayoutAnimationActivity"
+            android:theme="@style/AppTheme"
+            android:label="@string/title_activity_layout_animation" >
+        </activity>
     </application>
 
 </manifest>
